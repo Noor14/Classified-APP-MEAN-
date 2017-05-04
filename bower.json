@@ -1,0 +1,25 @@
+{
+  "name": "Classified App",
+  "authors": [
+    "Noor ALi <mohammadnoor_ali@yahoo.com>"
+  ],
+  "description": "It is sales and Purchase web application with different type of service",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.4.2",
+    "angular": "1.6.4",
+    "font-awesome": "4.7.0",
+    "slick-carousel": "^1.6.0",
+    "MDBootstrap": "^4.3.1",
+    "ng-dialog": "^1.1.0"
+  }
+}

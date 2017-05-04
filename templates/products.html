@@ -1,0 +1,56 @@
+<div class="allproducts">
+    <div class="container marginTop">
+        <div class="row">
+            <div ng-repeat = "product in allCarts track by $index" class="col-lg-3 col-md-6 mb-r">
+
+                <!--Card-->
+                <div class="card card-cascade narrower">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/shirt.jpg" class="img-fluid" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block text-center">
+                        <!--Category & Title-->
+                        <a href="" class="text-muted"><h5>Shorts</h5></a>
+                        <h4 class="card-title"><strong><a href="">Denim shorts</a></strong></h4>
+
+                        <!--Rating-->
+                        <ul class="rating">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star-o"></i></li>
+                        </ul>
+
+                        <!--Description-->
+                        <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.
+                        </p>
+
+                        <!--Card footer-->
+                        <div class="card-footer">
+                            <span class="left">49$</span>
+                        <span class="right">
+                <a data-toggle="tooltip" data-placement="top" title="Add to Cart" ui-sref="home.info"><i class="fa fa-shopping-cart"></i></a>
+                <a ui-sref="home.detail" data-toggle="tooltip" data-placement="top" title="Quick Look"><i class="fa fa-eye"></i></a>
+                <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist"><i class="fa fa-heart"></i></a>
+            </span>
+                        </div>
+
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+        </div>
+    </div>
+</div>

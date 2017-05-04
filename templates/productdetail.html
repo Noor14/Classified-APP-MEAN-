@@ -1,0 +1,133 @@
+<div class="detail">
+    <div class="container marginTop">
+        <h2>Detail</h2>
+        <div class="product-detail">
+            <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="slider-for">
+                        <div><img src="images/shirt.jpg" alt="" class="img-fluid"></div>
+                        <div><img src="images/grey_shirt.jpg" alt="" class="img-fluid"></div>
+                        <div><img src="images/black_shirt.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                    <div class="slider-nav">
+                        <div class="card"><img src="images/shirt.jpg" alt="" class="img-fluid"></div>
+                        <div class="card"><img src="images/grey_shirt.jpg" alt="" class="img-fluid"></div>
+                        <div class="card"><img src="images/black_shirt.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="col-md-8 text-center">
+                    <p>
+                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <h2>Selected Product</h2>
+        <div class="table-responsive">
+            <table class="table product-table">
+                <!--Table head-->
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Unit Price</th>
+                    <th>QTY</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <!--/Table head-->
+
+                <!--Table body-->
+                <tbody>
+
+                <!--First row-->
+                <tr>
+                    <td scope="row">
+                        <img src="images/shirt.jpg" alt="" class="img-fluid">
+                    </td>
+                    <td>
+                        <h5><strong>Sportswear</strong></h5>
+                        <p class="text-muted">by FifeSteps</p>
+                    </td>
+                    <td>Blue</td>
+                    <td>38</td>
+                    <td>200 $</td>
+                    <td>
+                        <span class="qty">1 </span>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-sm btn-primary btn-rounded">
+                                <input type="radio" name="options" id="option1">&mdash;
+                            </label>
+                            <label class="btn btn-sm btn-primary btn-rounded">
+                                <input type="radio" name="options" id="option2">+
+                            </label>
+                        </div>
+                    </td>
+                    <td>200 $</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">Add to cart
+                        </button>
+                    </td>
+                </tr>
+                <!--/First row-->
+
+                </tbody>
+                <!--/Table body-->
+            </table>
+        </div>
+
+        <div class="relatedImages">
+        <h2>Related Products</h2> <a ui-sref="home.products"><i class="fa fa-eye"></i> View all</a>
+        </div>
+        <div class="slider">
+            <div class="relatedItems">
+                <button type="button" class="slick-prev">Previous</button>
+                <div class="card"><img src="images/shirt.jpg" alt="" class="img-fluid"></div>
+                <div class="card"><img src="images/shirt.jpg" alt="" class="img-fluid"></div>
+                <div class="card"><img src="images/grey_shirt.jpg" alt="" class="img-fluid"></div>
+                <div class="card"><img src="images/black_shirt.jpg" alt="" class="img-fluid"></div>
+                <div class="card"><img src="images/black_shirt.jpg" alt="" class="img-fluid"></div>
+                <div class="card"><img src="images/black_shirt.jpg" alt="" class="img-fluid"></div>
+                <button type="button" class="slick-next">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true
+        });
+        $('.relatedItems').slick({
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 6
+
+        });
+
+
+    });
+
+</script>
+
+
+

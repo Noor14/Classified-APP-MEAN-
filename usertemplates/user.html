@@ -1,0 +1,85 @@
+<div class="user">
+<nav class="navbar navbar-toggleable-md navbar-dark bg-primary fixed-top">
+
+    <div class="float-left">
+        <a data-activates="slide-out" class="sidebar button-collapse"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="container">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="user.profile">
+            <strong>Shopping App</strong>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav1">
+
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="img-fluid rounded-circle z-depth-0"></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-effect waves-light" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile Info</a>
+                        <a ui-sref="user.resetPassword" class="dropdown-item waves-effect waves-light"><i class="fa fa-key" aria-hidden="true"></i> Change Password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--/. SideNav slide-out button -->
+
+<!-- Sidebar navigation -->
+<div class="mynav">
+    <ul id="slide-out" class="side-nav">
+        <!-- Side navigation links -->
+        <li>
+            <div class="logo-wrapper waves-light">
+              <img src="images/logo.png" class="img-fluid flex-center">
+            </div>
+        </li>
+        <li>
+
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="icon"><i class="fa fa-search"></i></div>
+                </div>
+            </form>
+        </li>
+        <li class="active"><a class="waves-effect"><i class="fa fa-user" aria-hidden="true"></i> Dashboard</a></li>
+        <li><a class="waves-effect"><i class="fa fa-line-chart" aria-hidden="true"></i> Statistics</a></li>
+        <li  ui-sref="user.addProduct"><a class="waves-effect"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add Product</a></li>
+        <li ui-sref="user.allProducts"><a class="waves-effect"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Published Products</a></li>
+        <li ui-sref="user.allProducts"><a class="waves-effect"><i class="fa fa-shopping-basket" aria-hidden="true"></i> All Products</a></li>
+        <li><a class="waves-effect"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sold Products</a></li>
+        <li><a class="waves-effect"><i class="fa fa-usd" aria-hidden="true"></i> Payment History</a></li>
+        <li><a class="waves-effect"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Credit Card Info</a></li>
+
+
+
+        <!--/. Side navigation links -->
+        <!--<div class="sidenav-bg mask-strong"></div>-->
+    </ul>
+
+</div>
+
+<!--/. Sidebar navigation -->
+
+
+    <div class="container marginTop">
+        <ui-view></ui-view>
+    </div>
+
+
+
+</div>
+<script type="text/javascript">
+    $('.button-collapse').sideNav({
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    });
+</script>
+

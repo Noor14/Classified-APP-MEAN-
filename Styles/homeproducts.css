@@ -1,0 +1,146 @@
+body{
+    font-weight: 300;
+}
+.marginTop{
+    margin-top: 80px;
+}
+.sidebar{
+    color: white !important;
+}
+.sidebar:hover{
+    color: white !important;
+
+}
+.dropdown .dropdown-menu {
+     padding: 0;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #212121 !important;
+    transition: all .1s linear;
+    box-shadow: none !important;
+     background-color: #f7f7f9;
+}
+
+.detail .table td{
+    vertical-align: middle;
+}
+.detail h2{
+    font-variant: small-caps;
+    border-bottom: 1px solid grey;
+}
+.detail .col-md-8{
+    display: flex;
+    align-items: center;
+}
+.detail .col-md-4{
+    box-shadow: 5px 2px 6px -1px rgba(0,0,0,0.1);
+}
+.product-detail .slider-nav{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.product-detail .slider-for{
+   padding: 20px;
+}
+.product-detail .slider-nav .slick-list{
+    overflow: visible;
+}
+.slick-prev:before, .slick-next:before{
+    color:#0275d8;
+}
+.relatedImages{
+    border-bottom: 1px solid grey;
+    display: flex;
+}
+.relatedImages h2{
+    border:none;
+    flex: 90;
+}
+.relatedImages a{
+    flex: 10;
+    text-align: center;
+}
+.table-responsive, .slider, .product-detail{
+    margin: 20px 0;
+}
+.slider .slick-list{
+    padding: 8px;
+    box-sizing: border-box;
+}
+.relatedItems .card{
+    /*margin:10px;*/
+    padding: 10px;
+}
+.relatedItems .card img{
+  border-radius: 4px;
+}
+.info .tab-color li a.active {
+    border-color: #0275d8;
+    color:black;
+}
+.user ul.side-nav{
+z-index: 10000;
+transform: translateX(0%) !important;
+background-color: whitesmoke;
+}
+.user ul.side-nav li {
+    border-bottom: 1px solid lightgrey;
+}
+
+.user ul.side-nav li a{
+    color: #000;
+}
+.user nav i.fa, .user ul.side-nav i.fa{
+    width: 15px;
+    margin-right: 10px;
+}
+.user nav .dropdown-divider{
+    margin: 0;
+}
+.user ul.side-nav li a:hover{
+    background: #0275d8;
+}
+.user ul.side-nav li.active{
+    background: #0275d8;
+}
+.user ul.side-nav li.active a{
+      color: #fff;
+  }
+.user ul.side-nav li input{
+    width: inherit;
+    margin: 0 auto;
+}
+.dashboard .userdashboard{
+    padding-bottom: 40px;
+}
+.user ul.side-nav li form .form-group{
+    display: flex;
+    padding: 0 10px;
+}
+.user ul.side-nav li form .form-group input{
+    border-bottom-color: #ccc;
+    color: black;
+    padding: 8px 20px 0 0;
+    width: 180px;
+}
+
+.user ul.side-nav div.logo-wrapper{
+    height: inherit;
+}
+.user ul.side-nav div.logo-wrapper img{
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: 134px;
+    width: 100%;
+}
+
+form .form-group div.icon{
+    color: #000;
+    margin-top: 12px;
+    text-align: center;
+    position: relative;
+    right: 15px;
+    top: 2px;
+}
+
