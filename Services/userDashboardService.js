@@ -1,6 +1,6 @@
 app.service('userDashboardService',function(){
 
     var vm = this;
-    vm.products = new Array(8);
+    vm.products = new Array(7);
 
 });

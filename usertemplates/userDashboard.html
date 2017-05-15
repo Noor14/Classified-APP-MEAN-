@@ -1,5 +1,34 @@
 <div class="dashboard">
     <div class="row">
+        <div class="col-md-3 userdashboard">
+            <div class="card card-cascade wider">
+
+                <!--Card content-->
+                <div class="card-block text-center">
+                    <!--Category & Title-->
+                    <h5>Weather</h5>
+                    <h5>Today : {{today | date : 'EEE - MMM - y'}} </h5>
+                    <h4 class="card-title"><strong>{{weather.name}}</strong></h4>
+
+                    <!--Description-->
+                    <p class="card-text text-danger">
+                        <i class="fa fa-thermometer-half fa-5x" aria-hidden="true"></i>
+                    </p>
+
+                    <!--Card footer-->
+                    <div class="card-footer">
+                        <span class="center">
+                            Temperature : {{weather.main.temp}} <sup>0</sup>C
+                        </span>
+
+                    </div>
+
+                </div>
+                <!--/.Card content-->
+
+            </div>
+
+        </div>
         <div class="col-md-3 userdashboard" ng-repeat="usercart in Carts track by $index">
             <div class="card card-cascade wider">
 
@@ -16,9 +45,9 @@
                     <div class="card-footer">
                         <span class="left">49$</span>
             <span class="right">
-<a data-toggle="tooltip" data-placement="top" title="Share"><i class="fa fa-share-alt"></i></a>
-<a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist"><i class="fa fa-heart"></i></a>
-</span>
+                <a data-toggle="tooltip" data-placement="top" title="Share"><i class="fa fa-share-alt"></i></a>
+                <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist"><i class="fa fa-heart"></i></a>
+            </span>
                     </div>
 
                 </div>

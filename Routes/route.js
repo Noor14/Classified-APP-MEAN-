@@ -35,23 +35,30 @@ app.config(function($urlRouterProvider, $stateProvider){
             url : '',
             abstract : true,
             templateUrl : "usertemplates/user.html",
-            controller : userDashboardController
 
         })
 
-    .state('user.profile',{
-        url : '/user-profile',
+    .state('user.dashboard',{
+        url : '/user-dashboard',
         templateUrl : "usertemplates/userDashboard.html",
+        controller : 'userDashboardController'
+
     })
     .state('user.addProduct', {
         url: '/addProduct',
         templateUrl: "usertemplates/addProduct.html",
+        controller:"addProductController"
+    })
+    .state('user.profileInfo', {
+            url: '/user-profile',
+            templateUrl: "usertemplates/profileInfo.html",
+            controller:"userInfoController"
     })
 
     .state('user.allProducts', {
             url: '/user-products',
             templateUrl: "usertemplates/userproducts.html",
-             controller : userProductsController
+             controller : 'userProductsController'
 
     })
 

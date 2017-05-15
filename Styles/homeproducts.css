@@ -83,6 +83,9 @@ z-index: 10000;
 transform: translateX(0%) !important;
 background-color: whitesmoke;
 }
+#sidenav-overlay{
+z-index: 1100 !important;
+}
 .user ul.side-nav li {
     border-bottom: 1px solid lightgrey;
 }
@@ -142,5 +145,30 @@ form .form-group div.icon{
     position: relative;
     right: 15px;
     top: 2px;
+}
+.addproduct .addTab{
+    background: #3a6ea3!important;
+    margin: 0;
+    color: #fff;
+}
+.file-btn{
+    padding-top: 0 !important;
+    margin: 0 6px 0 0 !important;
+    padding-bottom: 0 !important;
+}
+.file-pic{
+    width: 200px;
+    border: 1px solid #ccc;
+    height: 200px;
+    border-radius: 4px;
+    margin:10px auto;
+}
+.file-field{
+    width: 100%;
+}
+
+.profileInfo .profile-btn{
+    display: flex;
+    align-items: center;
 }
 
