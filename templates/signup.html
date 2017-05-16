@@ -1,0 +1,54 @@
+
+<div class="signupPage marginTop">
+    <div class="col-md-4 offset-4">
+        <div class="card">
+            <div class="card-block">
+
+                <!--Header-->
+                <div class="text-center">
+                    <h3><i class="fa fa-lock"></i> Sign up:</h3>
+                    <hr class="mt-2 mb-2">
+                </div>
+
+                <!--Body-->
+                <p>We'll write rarely, but only the best content.</p>
+                <br>
+
+                <!--Body-->
+
+                <form name="signupForm" ng-submit="createAccount()">
+
+                <div class="md-form">
+                    <input name="email" type="email" ng-model="userInfo.email" id="form1" class="form-control">
+                    <label for="form1">Email</label>
+                </div>
+
+                <div class="md-form">
+                    <input name="password" type="password" ng-model="userInfo.password" id="form2" class="form-control">
+                    <label for="form2">Password</label>
+                </div>
+
+                <div class="md-form">
+                    <input name="confirmPassword" type="password" ng-model="userInfo.confirmPassword" id="form3" class="form-control">
+                    <label for="form3">Password (Confirm)</label>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-deep-orange"><i class="fa fa-sign-in" aria-hidden="true"></i> Create My Account</button>
+                </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="options">
+
+
+                    <p>Already have an account? <a ui-sref="login">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Form without header-->
+
+

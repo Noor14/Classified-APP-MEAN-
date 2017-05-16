@@ -26,6 +26,11 @@ app.config(function($urlRouterProvider, $stateProvider){
         templateUrl : "templates/login.html",
         //controller : loginController
      })
+        .state('signUp',{
+            url : '/register',
+            templateUrl : "templates/signup.html",
+            controller : signUpController
+        })
     .state('password',{
         url : '/password',
         templateUrl : "templates/forgotpassword.html",
