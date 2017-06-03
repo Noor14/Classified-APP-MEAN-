@@ -1,20 +1,20 @@
 app.service('createAccountService', function($http, $q){
  var vm = this;
     vm.create = function(detail){
-        var defferd = $q.defer();
+        var deferred = $q.defer();
         var obj = {
             method: 'POST',
-            url : 'http://localhost/createAccount',
+            url : "http://localhost:8000/addUserInfo",
             headers: {content_Type: 'application/json'},
             data: detail
         };
 
         $http(obj).then(function(succ){
             console.log(succ);
-            defferd.resolve(succ)
+            deferred.resolve(succ)
         },function(err){
-        defferd.reject(err);
+            deferred.reject(err);
         });
-        return defferd.promise;
+        return deferred.promise;
     }
 });

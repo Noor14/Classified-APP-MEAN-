@@ -59,19 +59,20 @@
                     <td>38</td>
                     <td>200 $</td>
                     <td>
-                        <span class="qty">1 </span>
+                        <span class="qty">{{quantity}}</span>
                         <div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-sm btn-primary btn-rounded">
-                                <input type="radio" name="options" id="option1">&mdash;
+                                <input type="radio" name="options" id="option1" ng-click="productQuantity()">&mdash;
                             </label>
                             <label class="btn btn-sm btn-primary btn-rounded">
-                                <input type="radio" name="options" id="option2">+
+                                <input type="radio" name="options" id="option2" ng-click="productQuantity()">+
                             </label>
                         </div>
                     </td>
                     <td>200 $</td>
                     <td>
-                        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">Add to cart
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                            Add to cart
                         </button>
                     </td>
                 </tr>

@@ -14,7 +14,8 @@ app.config(function($urlRouterProvider, $stateProvider){
         })
         .state('home.detail',{
             url : '/detail',
-            templateUrl : "templates/productdetail.html"
+            templateUrl : "templates/productdetail.html",
+            controller : 'productDetailController'
         })
         .state('home.info',{
             url : '/information',
@@ -62,8 +63,28 @@ app.config(function($urlRouterProvider, $stateProvider){
 
     .state('user.allProducts', {
             url: '/user-products',
-            templateUrl: "usertemplates/userproducts.html",
+            templateUrl: "usertemplates/allProducts.html",
              controller : 'userProductsController'
+
+    })
+
+    .state('user.pendingProducts', {
+            url: '/pending-products',
+            templateUrl: "usertemplates/pendingProducts.html",
+            controller : 'userProductsController'
+
+    })
+
+    .state('user.publishedProducts', {
+            url: '/published-products',
+            templateUrl: "usertemplates/publishedProducts.html",
+            controller : 'userProductsController'
+
+     })
+    .state('user.stats', {
+            url: '/user-stats',
+            templateUrl: "usertemplates/userstats.html",
+            //controller : 'userStatsController'
 
     })
 
@@ -72,6 +93,5 @@ app.config(function($urlRouterProvider, $stateProvider){
         templateUrl : "usertemplates/resetPassword.html",
         //controller : loginController
     });
-
 
 });

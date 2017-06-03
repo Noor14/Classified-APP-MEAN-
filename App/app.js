@@ -1,1 +1,1 @@
-var app = angular.module('classifiedApp',['ui.router','ngDialog']);
+var app = angular.module('classifiedApp',['gridshore.c3js.chart', 'ui.router', 'ngDialog', 'ngMessages']);

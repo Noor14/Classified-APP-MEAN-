@@ -1,18 +1,18 @@
 <div class="user">
 <nav class="navbar navbar-toggleable-md navbar-dark bg-primary fixed-top">
+    <!--<div class="float-left">-->
+        <!--<a  class="sidebar button-collapse"><i class="fa fa-bars"></i></a>-->
+    <!--</div>-->
+    <div class="container nav-container">
 
-    <div class="float-left">
-        <a data-activates="slide-out" class="sidebar button-collapse"><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="container">
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="sidebar button-collapse navbar-toggler navbar-toggler-right" type="button" data-activates="slide-out">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" ui-sref="user.dashboard">
             <strong>Shopping App</strong>
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav1">
+
+        <div class=" navbar-collapse">
 
             <ul class="navbar-nav ml-auto nav-flex-icons">
                 <li class="nav-item avatar dropdown">
@@ -50,12 +50,12 @@
             </form>
         </li>
         <li class="active" ui-sref="user.dashboard"><a class="waves-effect"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a></li>
-        <li><a class="waves-effect"><i class="fa fa-line-chart" aria-hidden="true"></i> Statistics</a></li>
+        <li ui-sref="user.stats"><a class="waves-effect"><i class="fa fa-line-chart" aria-hidden="true"></i> Statistics</a></li>
         <li  ui-sref="user.addProduct"><a class="waves-effect"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add Product</a></li>
-        <li><a class="waves-effect"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Published Products</a></li>
+        <li ui-sref="user.publishedProducts"><a class="waves-effect"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Published Products</a></li>
         <li ui-sref="user.allProducts"><a class="waves-effect"><i class="fa fa-shopping-basket" aria-hidden="true"></i> All Products</a></li>
         <li><a class="waves-effect"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sold Products</a></li>
-        <li><a class="waves-effect"><i class="fa fa-bookmark" aria-hidden="true"></i> Pending Carts</a></li>
+        <li ui-sref="user.pendingProducts"><a class="waves-effect"><i class="fa fa-bookmark" aria-hidden="true"></i> Pending Carts</a></li>
         <li><a class="waves-effect"><i class="fa fa-usd" aria-hidden="true"></i> Payment History</a></li>
         <li><a class="waves-effect"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Credit Card Info</a></li>
 
