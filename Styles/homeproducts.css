@@ -146,6 +146,14 @@ z-index: 1100 !important;
     margin: 0;
 }
 
+.loginPage, .signupPage, .passwordPage{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 @media only screen and (max-width:991px){
 
     .user .nav-container{
