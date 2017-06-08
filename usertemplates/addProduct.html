@@ -2,16 +2,16 @@
 
     <ul class="nav nav-tabs tabs-4 addTab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" data-target="#panel1" role="tab">Product Image</a>
+            <a class="nav-link active" data-toggle="tab" data-target="#panel1" role="tab">Image</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" data-target="#panel2" role="tab">Product Category</a>
+            <a class="nav-link" data-toggle="tab" data-target="#panel2" role="tab">Type</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" data-target="#panel3" role="tab">Product Detail</a>
+            <a class="nav-link" data-toggle="tab" data-target="#panel3" role="tab">Detail</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" data-target="#panel4" role="tab">Product View</a>
+            <a class="nav-link" data-toggle="tab" data-target="#panel4" role="tab">View</a>
         </li>
     </ul>
     <!-- Tab panels -->
@@ -133,8 +133,66 @@
         <!--/.Panel 3-->
         <!--Panel 4-->
         <div class="tab-pane fade" id="panel4" role="tabpanel">
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    <div class="card card-cascade narrower view-cart">
+                        <a class="btn-floating btn-large edit-button"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="images/shirt.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Category & Title-->
+                            <a href="" class="text-muted"><h5>Shorts</h5></a>
+                            <h4 class="card-title"><strong><a href="">Denim shorts</a></strong></h4>
+
+                            <!--Description-->
+                            <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.
+                            </p>
+
+                            <!--Card footer-->
+                            <div class="card-footer">
+                                <span class="center">49$</span>
+                            </div>
+
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Related Images</h4>
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="view-pic"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="view-pic"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="view-pic"></div>
+                    </div>
+                    </div>
+                    <h4>Searching Keywords</h4>
+                    <div class="chip" ng-repeat="tag in tags track by $index">
+                        {{tag}}
+                        <i class="close fa fa-times" ng-click="removeChip($index)"></i>
+                    </div>
+
+                    <div class="publish-cart-btn">
+                        <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-globe" aria-hidden="true"></i> Publish Now</button>
+                        <button type="button" class="btn btn-secondary btn-lg"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save to Draft</button>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
         <!--/.Panel 4-->
     </div>

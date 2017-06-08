@@ -116,6 +116,10 @@ z-index: 1100 !important;
 .dashboard .userdashboard{
     padding-bottom: 40px;
 }
+.dashboard p.card-text{
+    width: 100%;
+}
+
 .user ul.side-nav li form .form-group{
     display: flex;
     padding: 0 10px;
@@ -160,6 +164,13 @@ form .form-group div.icon{
     right: 15px;
     top: 2px;
 }
+.addproduct .publish-cart-btn{
+    margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+
+}
 .addproduct .addTab{
     background: #3a6ea3!important;
     margin: 0;
@@ -174,6 +185,12 @@ form .form-group div.icon{
     width: 200px;
     border: 1px solid #ccc;
     height: 200px;
+    border-radius: 4px;
+    margin:10px auto;
+}
+.view-pic{
+    border: 1px solid #ccc;
+    height: 130px;
     border-radius: 4px;
     margin:10px auto;
 }
@@ -200,12 +217,26 @@ form .form-group div.icon{
     color: #0275d8 !important;
     border-bottom-color: #0275d8 !important ;
 }
+
 .publishedProducts .filter-navbar input::-webkit-input-placeholder{
     color: #0275d8 !important;
 }
 .pendingProducts .publish-button{
     position: absolute;
     z-index: 100;
-    top: -35px;
-    right: -25px;
+    top: -45px;
+    right: -15px;
+}
+.addproduct .edit-button{
+    position: absolute;
+    z-index: 100;
+    top: -45px;
+    right: -15px;
+    background-color: #fff;
+}
+.addproduct .view-cart{
+    margin-bottom: 20px;
+}
+.addproduct .edit-button i {
+    color: #999;
 }
