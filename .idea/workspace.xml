@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="223f90c4-d801-41b1-a634-69b8de4b9f3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Styles/homeproducts.css" afterPath="$PROJECT_DIR$/Styles/homeproducts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/forgotpassword.html" afterPath="$PROJECT_DIR$/templates/forgotpassword.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/signup.html" afterPath="$PROJECT_DIR$/templates/signup.html" />
     </list>
     <ignored path="Classi App.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -428,7 +424,13 @@
       <option name="project" value="LOCAL" />
       <updated>1496914683233</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Classified login signup and password pages update">
+      <created>1496915317352</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496915317352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -479,7 +481,8 @@
     <MESSAGE value="payment and add product feature remaining" />
     <MESSAGE value="insert and retrieve work is done" />
     <MESSAGE value="Classified pages update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classified pages update" />
+    <MESSAGE value="Classified login signup and password pages update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classified login signup and password pages update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
