@@ -79,7 +79,7 @@ body{
     border-color: #0275d8;
     color:black;
 }
-.user ul.side-nav{
+.user ul.side-nav , .home ul.side-nav{
 z-index: 10000;
 transform: translateX(0%) !important;
 background-color: whitesmoke;
@@ -87,54 +87,56 @@ background-color: whitesmoke;
 #sidenav-overlay{
 z-index: 1100 !important;
 }
-.user ul.side-nav li {
+.home .mobile-view{
+    display: none;
+}
+.home .dropdown .dropdown-menu a{
+    border-bottom: 1px solid #cccccc !important
+}
+
+.user ul.side-nav li{
     border-bottom: 1px solid lightgrey;
 }
 
-.user ul.side-nav li a{
+.user ul.side-nav li a , .home ul.side-nav li a {
     color: #000;
 }
-.user nav i.fa, .user ul.side-nav i.fa{
+.user nav i.fa, .user ul.side-nav i.fa, .home ul.side-nav i.fa {
     width: 15px;
     margin-right: 10px;
 }
 .user nav .dropdown-divider{
     margin: 0;
 }
-.user ul.side-nav li a:hover{
+.user ul.side-nav li a:hover, .home ul.side-nav li a:hover{
     background: #0275d8;
 }
-.user ul.side-nav li.active{
+.user ul.side-nav li.active, .home ul.side-nav li.active{
     background: #0275d8;
 }
-.user ul.side-nav li.active a{
+.user ul.side-nav li.active a , .home ul.side-nav li.active a{
       color: #fff;
   }
-.user ul.side-nav li input{
-    width: inherit;
-    margin: 0 auto;
-}
-
 
 .dashboard .card{
     width: 100%;
 }
 
-.user ul.side-nav li form .form-group{
+.user ul.side-nav li form .form-group, .home ul.side-nav li form .form-group{
     display: flex;
     padding: 0 10px;
 }
-.user ul.side-nav li form .form-group input{
+.user ul.side-nav li form .form-group input, .home ul.side-nav li form .form-group input{
     border-bottom-color: #ccc;
     color: black;
     padding: 8px 20px 0 0;
     width: 180px;
 }
 
-.user ul.side-nav div.logo-wrapper{
+.user ul.side-nav div.logo-wrapper, .home ul.side-nav div.logo-wrapper{
     height: inherit;
 }
-.user ul.side-nav div.logo-wrapper img{
+.user ul.side-nav div.logo-wrapper img, .home ul.side-nav div.logo-wrapper img{
     padding-top: 0;
     padding-bottom: 0;
     overflow: hidden;
@@ -156,13 +158,20 @@ z-index: 1100 !important;
 
 @media only screen and (max-width:991px){
 
-    .user .nav-container{
+    .user .nav-container, .home .nav-container{
         display: flex;
     }
-    .user .navbar-brand{
+    .user .navbar-brand, .home .navbar-brand{
         flex: 1;
     }
+    .home .desktop-view{
+        display: none;
+    }
+    .home .mobile-view{
+        display: block;
+    }
 }
+
 
 form .form-group div.icon{
     color: #000;
