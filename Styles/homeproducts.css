@@ -4,6 +4,7 @@ body{
 .marginTop{
     margin-top: 80px;
 }
+
 .sidebar{
     color: white !important;
 }
@@ -113,10 +114,9 @@ z-index: 1100 !important;
     width: inherit;
     margin: 0 auto;
 }
-.dashboard .userdashboard{
-    padding-bottom: 40px;
-}
-.dashboard p.card-text{
+
+
+.dashboard .card{
     width: 100%;
 }
 
@@ -151,7 +151,7 @@ z-index: 1100 !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 635px;
 }
 
 @media only screen and (max-width:991px){
