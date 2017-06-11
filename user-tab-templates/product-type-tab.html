@@ -1,0 +1,36 @@
+<div class="md-form">
+    <select class="form-control">
+        <option value="1" selected>Product Category</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+    </select>
+
+    <!--<input type="text" id="category" name="category" ng-model="product.category" class="form-control validate" required>-->
+    <!--<label for="category" >Product Category</label>-->
+</div>
+<div class="md-form">
+    <input type="text" id="type" name="type" ng-model="product.type" class="form-control validate" required>
+    <label for="type" >Product Type</label>
+</div>
+<div class="md-form">
+    <input type="text" id="collection" name="collection" ng-model="product.collection" class="form-control validate" required>
+    <label for="collection" >Product Collection</label>
+</div>
+<div class="md-form">
+    <input type="text" id="brand" name="brand" ng-model="product.brandName" class="form-control validate" required>
+    <label for="collection" >Product Brand Name (Optional)</label>
+</div>
+<div class="md-form">
+    <input type="text" id="keyword" name="keyword" ng-model="product.keyword" ng-keydown="createChip()" class="form-control">
+    <label for="keyword" >Product Keyword/Tags</label>
+    <div class="chip" ng-repeat="tag in tags track by $index">
+        {{tag}}
+        <i class="close fa fa-times" ng-click="removeChip($index)"></i>
+    </div>
+</div>
+<div class="text-right">
+    <button type="button" class="btn btn-primary"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</button>
+    <button type="button" class="btn btn-primary">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+</div>
