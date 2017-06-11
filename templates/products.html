@@ -1,5 +1,14 @@
 <div class="allproducts">
     <div class="container marginTop">
+        <!--   slider  -->
+        <div class="mainSlider">
+            <div><img src="images/slide1.jpg"/></div>
+            <div><img src="images/slide2.jpg"/></div>
+            <div><img src="images/slide3.jpg"/></div>
+        </div>
+
+        <h2>Latest Products</h2>
+
         <div class="row">
             <div ng-repeat = "product in allCarts track by $index" class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-r">
 
@@ -54,3 +63,12 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $('.mainSlider').slick({
+        autoplay:true,
+        autoplaySpeed:4000,
+        dots:true
+
+    });
+</script>

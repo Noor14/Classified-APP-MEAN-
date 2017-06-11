@@ -25,7 +25,7 @@ body{
 .detail .table td{
     vertical-align: middle;
 }
-.detail h2{
+.detail h2, .allproducts h2{
     font-variant: small-caps;
     border-bottom: 1px solid grey;
 }
@@ -46,7 +46,7 @@ body{
 .product-detail .slider-nav .slick-list{
     overflow: visible;
 }
-.slick-prev:before, .slick-next:before{
+.detail .slick-prev:before, .detail .slick-next:before{
     color:#0275d8;
 }
 .relatedImages{
@@ -93,7 +93,24 @@ z-index: 1100 !important;
 .home .dropdown .dropdown-menu a{
     border-bottom: 1px solid #cccccc !important
 }
-
+.allproducts .mainSlider img{
+    height: calc(100vh - 200px);
+    width: 100%;
+}
+.allproducts h2{
+    margin-bottom: 30px;
+}
+.home .slider .slick-list{
+    padding: 0;
+}
+.allproducts .slick-prev{
+    z-index: 1000;
+    left: 25px;
+}
+.allproducts .slick-next{
+    z-index: 1000;
+    right: 25px;
+}
 .user ul.side-nav li{
     border-bottom: 1px solid lightgrey;
 }
