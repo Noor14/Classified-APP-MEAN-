@@ -18,17 +18,17 @@
 
 
                 <div class="md-form">
-                    <input type="text" id="form2" class="form-control">
-                    <label for="form2">Your email</label>
+                    <input type="text" id="email" ng-model="user.email" class="form-control">
+                    <label for="email">Your email</label>
                 </div>
 
                 <div class="md-form">
-                    <input type="password" id="form3" class="form-control">
-                    <label for="form3">Your password</label>
+                    <input type="password" id="password" ng-model="user.password" class="form-control">
+                    <label for="password">Your password</label>
                 </div>
 
                 <div class="text-center">
-                    <button class="btn btn-deep-orange btn-block" ui-sref="user.dashboard"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+                    <button class="btn btn-deep-orange btn-block" ng-click="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
                     <button type="button" class="btn btn-fb btn-block"><i class="fa fa-facebook"></i> Facebook</button>
                     <button type="button" class="btn btn-gplus btn-block"><i class="fa fa-google-plus"></i> Google +</button>
                 </div>

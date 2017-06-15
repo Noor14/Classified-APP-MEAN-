@@ -1,7 +1,7 @@
 <div class="allproducts">
 
         <div class="row">
-            <div ng-repeat = "product in products track by $index" class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-r">
+            <div dir-paginate="product in products | itemsPerPage : 10 track by $index" class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-r">
 
                 <!--Card-->
                 <div class="card card-cascade narrower">
@@ -47,4 +47,10 @@
             </div>
         </div>
 
+    <dir-pagination-controls
+            max-size="9"
+            direction-links="true"
+            boundry-links="true">
+
+    </dir-pagination-controls>
 </div>

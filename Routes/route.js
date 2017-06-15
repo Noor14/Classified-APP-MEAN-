@@ -25,7 +25,7 @@ app.config(function($urlRouterProvider, $stateProvider){
      .state('login',{
         url : '/login',
         templateUrl : "templates/login.html",
-        //controller : loginController
+        controller : loginController
      })
         .state('signUp',{
             url : '/register',
@@ -37,12 +37,13 @@ app.config(function($urlRouterProvider, $stateProvider){
         templateUrl : "templates/forgotpassword.html",
         //controller : loginController
     })
-        .state('user',{
+
+    .state('user',{
             url : '',
             abstract : true,
             templateUrl : "usertemplates/user.html",
 
-        })
+    })
 
     .state('user.dashboard',{
         url : '/user-dashboard',
@@ -92,6 +93,34 @@ app.config(function($urlRouterProvider, $stateProvider){
         url : '/reset-password',
         templateUrl : "usertemplates/resetPassword.html",
         //controller : loginController
-    });
+    })
+    .state('admin',{
+            url : '',
+            abstract : true,
+            templateUrl : "admintemplates/admin.html",
+
+     })
+        .state('admin.dashboard',{
+            url : '/admin-dashboard',
+            templateUrl : "admintemplates/adminDashboard.html",
+            controller : 'adminDashboardController'
+
+        })
+        .state('admin.stats', {
+            url: '/admin-stats',
+            templateUrl: "admintemplates/adminstats.html",
+            //controller : 'userStatsController'
+
+        })
+
+        .state('admin.resetPassword',{
+            url : '/admin-reset-password',
+            templateUrl : "admintemplates/resetPassword.html",
+            //controller : loginController
+        })
+        .state('admin.profileInfo', {
+            url: '/admin-profile',
+            templateUrl: "admintemplates/profileInfo.html"
+        })
 
 });

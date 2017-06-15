@@ -22,6 +22,8 @@
     "MDBootstrap": "^4.3.1",
     "ng-dialog": "^1.1.0",
     "angular-messages": "^1.6.4",
-    "c3-angular": "^1.3.1"
+    "c3-angular": "^1.3.1",
+    "angularUtils-pagination": "angular-utils-pagination#^0.11.1",
+    "angular-filter": "^0.5.16"
   }
 }

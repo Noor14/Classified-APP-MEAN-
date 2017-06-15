@@ -1,0 +1,112 @@
+<div class="profileInfo">
+    <h2> Profile Info </h2>
+    <div class="card">
+        <div class="card-block">
+            <form ng-submit="saveInfo()">
+            <div class="row">
+                <div class="col-md-6 profile-btn">
+                    <div class="file-field">
+                        <div class="btn btn-primary btn-sm file-btn">
+                            <span>Upload Image</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form file-pic">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+        <div class="col-md-6">
+            <div class="md-form">
+                <input type="text" id="name" ng-model="userInfo.first_name" class="form-control validate">
+                <label for="name">First Name</label>
+            </div>
+        </div>
+
+        <!--Second column-->
+        <div class="col-md-6">
+            <div class="md-form">
+                <input type="text" id="lastname" ng-model="userInfo.last_name" class="form-control validate">
+                <label for="lastname">Last Name</label>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="md-form">
+                    <input type="text" id="gender" ng-model="userInfo.gender" class="form-control validate">
+                    <label for="gender">Gender</label>
+                </div>
+            </div>
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <div class="md-form">
+                    <input type="text" id="dob" ng-model="userInfo.dob" class="form-control validate">
+                    <label for="dob">Date of Birth</label>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" id="mobile" ng-model="userInfo.mobile_no" class="form-control validate">
+                        <label for="mobile">Mobile Phone</label>
+                    </div>
+                </div>
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" id="home" ng-model="userInfo.home_no" class="form-control validate">
+                        <label for="home">Home Phone</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" id="address" ng-model="userInfo.address" class="form-control validate">
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" id="country" ng-model="userInfo.country" class="form-control validate">
+                        <label for="country">Country</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" id="city" ng-model="userInfo.city" class="form-control validate">
+                        <label for="city">City</label>
+                    </div>
+                </div>
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <input type="text" id="postcode" ng-model="userInfo.postalCode" class="form-control validate">
+                        <label for="postcode">Postal Code</label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+            </div>
+            </form>
+    </div>
+    </div>
+</div>
